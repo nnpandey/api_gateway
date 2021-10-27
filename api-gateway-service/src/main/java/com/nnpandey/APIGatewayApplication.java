@@ -22,8 +22,7 @@ public class APIGatewayApplication {
 
 		final CorsConfiguration corsConfig = new CorsConfiguration();
 		corsConfig.setAllowedOrigins(Collections.singletonList("*"));
-		corsConfig.setMaxAge(8000L);
-		corsConfig.setAllowedMethods(Arrays.asList("GET", "POST","PUT","DELETE"));
+		corsConfig.setAllowedMethods(Arrays.asList("GET", "POST","PUT","PATCH", "DELETE"));
 		corsConfig.addAllowedHeader("*");
 
 		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
